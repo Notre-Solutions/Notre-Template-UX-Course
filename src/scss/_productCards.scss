@@ -1,0 +1,111 @@
+// .product-cards {
+//   .title {
+//     width: 100%;
+//     text-align: center;
+//   }
+//   .title h1 {
+//     font-size: 50px;
+//     font-family: "Exo", sans-serif;
+//   }
+//   .card1 {
+//     text-align: center;
+//     position: absolute;
+//     left: 10rem;
+//     width: 25rem;
+//     height: 35rem;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     background: linear-gradient(rgb(225, 150, 58), rgb(227, 144, 91));
+//     transition: 0.6s;
+
+//     transform: rotatex(75deg) translatey(-20rem) translatez(-10rem);
+//     box-shadow: 0px 2rem 6rem rgba(0, 0, 0, 0.5);
+//   }
+//   .card1:hover {
+//     transform: rotatex(0deg);
+//     transform: rotatez(0deg);
+//     transition: 0.6s;
+//     box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.3);
+//   }
+//   .card1 img {
+//     transform: translateY(1.5rem);
+//     width: 20rem;
+//     height: 12rem;
+//   }
+//   h3 {
+//     font-size: 2.5rem;
+//     font-family: "Abel", sans-serif;
+//     color: rgb(255, 255, 255);
+//     text-shadow: 0 0 2px rgb(255, 255, 255);
+//     transform: translatey(1rem;
+//   }
+
+//   p {
+//     font-family: "Abel", sans-serif;
+//     color: white;
+//     text-align: center;
+//     width: 22rem;
+//     transform: translatex(1.2rem);
+//   }
+
+//   .card2 {
+//     text-align: center;
+//     position: absolute;
+//     left: 55rem;
+//     width: 25rem;
+//     height: 35rem;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     background: linear-gradient(rgb(93, 94, 170), rgb(93, 66, 103));
+//     animation: animate 1s linear infinite;
+//     transition: 0.6s;
+
+//     transform: rotatex(75deg) translatey(-20rem) translatez(-10rem);
+//     box-shadow: 0px 2rem 6rem rgba(0, 0, 0, 0.5);
+//   }
+//   .card2:hover {
+//     transform: rotatex(0deg);
+//     transition: 0.6s;
+//     box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.3);
+//   }
+//   .card2 img {
+//     transform: translateY(1.5rem);
+//     width: 18rem;
+//     height: 15rem;
+//   }
+//   .card3 {
+//     text-align: center;
+//     position: absolute;
+//     left: 100rem;
+//     width: 25rem;
+//     height: 35rem;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     background: linear-gradient(#ff5252, #b33939);
+//     transition: 0.6s;
+
+//     transform: rotatex(75deg) translatey(-20rem) translatez(-10rem);
+//     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+//   }
+//   .card3:hover {
+//     transform: rotatex(0deg);
+//     transition: 0.6s;
+//     box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.3);
+//   }
+//   .card3 img {
+//     transform: translateY(1.5rem);
+//     width: 20rem;
+//     height: 12rem;
+//   }
+//   .footer {
+//     position: absolute;
+//     top: 50rem;
+
+//     width: 100%;
+//     text-align: center;
+//   }
+//   .footer h2 {
+//     font-size: 1.8rem;
+//     font-family: "Exo", sans-serif;
+//   }
+// }

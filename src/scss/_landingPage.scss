@@ -1,0 +1,226 @@
+.landing-page {
+  &-header {
+    width: 100%;
+    text-align: center;
+    &-img {
+      width: 35%;
+      left: 34%;
+      object-fit: cover;
+    }
+    &-img-container {
+      margin-top: 9rem;
+      left: 50%;
+    }
+    &-title {
+      margin-top: 5rem;
+      font-weight: 700;
+      font-size: 4rem;
+      color: $notre-heading-color;
+      &-sub {
+        margin-top: 3rem;
+        color: $notre-heading-color;
+        font-size: 2rem;
+        font-style: italic;
+      }
+    }
+
+    &-scroll-down {
+      color: $notre-heading-color;
+      margin-top: 7rem;
+      font-size: 4rem;
+    }
+  }
+
+  &-out-mission {
+    section {
+    }
+    margin-top: -10rem;
+    height: 105rem;
+    background: url("../img/bg/bluebg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    position: relative;
+
+    &-container {
+      position: absolute;
+      margin: 3rem;
+      font-size: 2rem;
+      top: 40%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      color: white;
+    }
+
+    &-grid-container {
+      margin: 3rem;
+    }
+
+    &-icon {
+      margin: 3rem;
+      font-size: 10rem;
+      left: 50%;
+    }
+
+    &-header {
+      font-size: 4rem;
+    }
+
+    &-text-box {
+      margin: 3rem;
+    }
+  }
+
+  &-testimonials {
+    background: $notre-dark-gray;
+    font-size: 2.3rem;
+    color: white;
+    height: 40rem;
+    display: flex;
+    &-card {
+      margin: 10rem 4rem 0 4rem;
+      display: flex;
+    }
+    &-img {
+      border-radius: 50%;
+    }
+
+    &-img-container {
+      width: 35rem;
+    }
+
+    &-text-box {
+      margin: 2rem;
+    }
+
+    &-name {
+      color: $notre-main;
+    }
+  }
+
+  &-product {
+    text-align: center;
+    &-title {
+      margin: 4rem 0 4rem 0;
+      font-size: 5rem;
+    }
+    &-cards {
+      display: flex;
+      justify-content: center;
+
+      &-card {
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        text-align: center;
+        justify-content: center;
+        margin: 0 3% 0 3%;
+        width: 20%;
+        border: $border-black-thin;
+        box-shadow: $shadow;
+
+        &-title {
+          font-size: 3rem;
+          padding: 1rem;
+          color: white;
+          background: $notre-main;
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        }
+
+        &-money {
+          font-size: 4rem;
+          font-weight: 600;
+        }
+
+        &-list {
+          list-style-type: none;
+          font-size: 2rem;
+          &-item {
+          }
+        }
+        &-btn-gb {
+          height: 5rem;
+        }
+
+        &-btn {
+          margin: 5% 0 0 30%;
+          font-size: 1.5rem;
+          padding: 0.5rem;
+          border-radius: 2rem;
+          width: 40%;
+          background: $notre-button-pricing-card-color;
+        }
+      }
+    }
+  }
+
+  &-our-services {
+    margin-top: 5rem;
+    text-align: center;
+    background: url("../img/bg/Path 17.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250rem;
+    &-title {
+      padding-top: 5rem;
+      // why is this not workig?
+      font-size: $section-font-size;
+    }
+
+    &-gird {
+      display: grid;
+      grid-template-columns: 30% 30%;
+      grid-gap: 7%;
+      justify-content: center;
+    }
+
+    &-card {
+      margin-top: 20%;
+      &-icon {
+        color: black;
+        font-size: 9rem;
+      }
+
+      &-title {
+        margin: 1rem;
+        color: $notre-sub;
+        font-size: 3rem;
+      }
+
+      &-text-box {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-meet-the-team {
+    margin-top: -70%;
+    &-title {
+      font-size: $section-font-size;
+      text-align: right;
+      margin: 5% 12% 0 0;
+    }
+
+    &-grid {
+      margin-top: 10%;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 60%;
+      grid-gap: 3rem;
+    }
+    &-card {
+      display: flex;
+      margin-top: 10%;
+      &-text-box {
+        margin-top: 5%;
+        padding: 2rem;
+        font-size: 1.5rem;
+      }
+      &-img {
+        width: 90%;
+        border-radius: 50%;
+      }
+    }
+  }
+}

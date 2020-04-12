@@ -1,0 +1,63 @@
+@include media-sm-rev {
+  html {
+    font-size: 8px;
+  }
+
+  .form {
+    .submit-btn {
+      left: 37.5% !important;
+      width: 25% !important;
+      top: 85% !important;
+      bottom: 5% !important;
+    }
+  }
+}
+
+@include media-landscape {
+  .burger-navigation {
+    height: 100% !important;
+    &__link {
+      font-size: 2.5rem !important;
+    }
+  }
+  .form {
+    .submit-btn {
+      top: 55% !important;
+      bottom: 35% !important;
+    }
+  }
+}
+
+@include media-md {
+  html {
+    font-size: 9px;
+  }
+
+  .side-nav {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: hidden;
+  }
+  .burger-navigation {
+    visibility: visible !important;
+  }
+}
+
+@include media-lg {
+  html {
+    font-size: 10px;
+  }
+}
+
+@include media-xl {
+  html {
+    font-size: 11px;
+  }
+  .container {
+    text-align: center;
+    max-width: 2048px !important;
+    margin: 0 10% !important;
+  }
+}

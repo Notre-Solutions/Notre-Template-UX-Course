@@ -1,0 +1,190 @@
+.nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+
+  &-logo {
+    margin-top: -0.5rem;
+    position: absolute;
+    left: 6rem;
+    font-weight: 700;
+  }
+
+  .thick {
+    color: $notre-main;
+    font-size: 2rem;
+  }
+  .thin {
+    color: black;
+    font-size: 2rem;
+  }
+
+  &-pricing {
+    background-color: white;
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
+
+  &-pricing:hover {
+    cursor: pointer;
+    color: white !important;
+    background-color: rgba(46, 122, 117, 0.9);
+  }
+
+  .menu-nav-scrolling {
+    border-radius: 0rem;
+  }
+
+  .menu-nav {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
+
+  .menu-nav__item {
+    display: inline;
+
+    padding-right: 4rem;
+    text-decoration: none;
+
+    &.active > a {
+      color: black;
+    }
+  }
+
+  .menu-nav__link {
+    text-decoration: none;
+    color: $notre-nav-text;
+    font-size: 1.6rem;
+    @include transition-ease;
+    &:hover {
+      color: black;
+    }
+  }
+
+  &.open {
+    visibility: visible;
+  }
+}
+
+.burger-navigation {
+  visibility: hidden;
+
+  &__button {
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    @include transition-ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .open-background {
+    transform: scale(80);
+  }
+
+  &__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+
+    z-index: 1500;
+
+    @include transition-ease;
+  }
+
+  &__nav {
+    ul li {
+      display: none;
+    }
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    @include transition-ease;
+
+    opacity: 0;
+    width: 0%;
+  }
+
+  .open-nav {
+    ul li {
+      display: list-item;
+    }
+    opacity: 1;
+    width: 100%;
+  }
+
+  .open-button {
+    background-color: transparent;
+
+    &::after {
+      transform: rotate(45deg);
+      width: 2rem;
+      top: 0;
+    }
+    &::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-top: 2.5rem;
+    position: relative;
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 0.2rem;
+      background-color: gray;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+      width: 1.5rem;
+    }
+  }
+}

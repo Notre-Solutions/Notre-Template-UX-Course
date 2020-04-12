@@ -1,0 +1,81 @@
+.footer {
+  margin-top: 5%;
+  background: $notre-dark-gray;
+  height: 25rem;
+  position: relative;
+
+  .line {
+    position: absolute;
+    background-color: white;
+    height: 0.1rem;
+    width: 80%;
+    top: 70%;
+    left: 10%;
+  }
+
+  .copy-right {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .social-icons {
+    position: absolute;
+    padding: 1rem;
+    font-size: 4rem;
+    top: 70%;
+    left: 35%;
+
+    .icon {
+      padding: 1rem;
+      color: white;
+    }
+  }
+
+  .links {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 70%;
+    display: flex;
+    &-items {
+      font-size: 1.5rem;
+      list-style-type: none;
+      margin-left: 3rem;
+    }
+  }
+
+  .notre-icon {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    font-size: 2rem;
+    .studio {
+      color: $notre-main;
+    }
+  }
+  .logo {
+    position: absolute;
+    margin-top: 5% !important;
+    left: 10%;
+    width: 3%;
+  }
+
+  .contact {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .email {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
